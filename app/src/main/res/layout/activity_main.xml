@@ -16,13 +16,19 @@
             android:layout_centerHorizontal="true"
             />
 
-        <EditText
-            android:id="@+id/enterPalindromeField"
-            android:layout_marginLeft="30dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"/>
+    <EditText
+        android:id="@+id/enterPalindromeField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:hint="Bitte hier String eingeben"
+        android:inputType="textNoSuggestions"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:autofillHints="false"
+   />
 
         <TextView
             android:id="@+id/palindromeLabel"
@@ -34,6 +40,7 @@
             android:layout_centerHorizontal="true"/>
 
     <Button
+        android:id="@+id/testButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/palindromeLabel"
